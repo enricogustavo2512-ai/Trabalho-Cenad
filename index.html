@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineQuiz - Quiz de Conhecimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+    <img src="imagens/imagem.jpg"
+         alt="Relâmpago McQueen"
+         width="200">
+
+    <h1>CineQuiz</h1>
+    <p>Teste seus conhecimentos e divirta-se!</p>
+</header>
+
+    <!-- Menu simples -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#quiz">Jogar</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+
+    <!-- Apresentação -->
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao CineQuiz!</h2>
+            <p>Responda perguntas sobre carros, Marvel, DC e desenhos antigos.</p>
+            <a class="botao" href="#quiz">Começar o quiz</a>
+        </section>
+
+        <!-- Área das perguntas -->
+        <section id="quiz">
+            <h2>Vamos jogar?</h2>
+            <p id="contador">Pergunta 1 de 20</p>
+            <h3 id="pergunta">A pergunta aparecerá aqui.</h3>
+            <div id="opcoes"></div>
+            <p id="mensagem"></p>
+            <button id="proximo" class="botao" disabled>Próxima pergunta</button>
+            <h3 id="resultado"></h3>
+            <button id="reiniciar" class="botao" hidden>Jogar novamente</button>
+        </section>
+
+        <!-- Informações sobre o projeto -->
+        <section id="sobre">
+            <h2>Sobre o CineQuiz</h2>
+            <p>Este é um jogo de perguntas feito com HTML, CSS e JavaScript.</p>
+            <p>Escolha uma resposta, confira se acertou e tente fazer o máximo de pontos!</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Projeto escolar - CineQuiz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
